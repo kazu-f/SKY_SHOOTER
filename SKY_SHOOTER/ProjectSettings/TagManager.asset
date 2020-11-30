@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Enemy
   - CameraTarget
+  - PBullet
   layers:
   - Default
   - TransparentFX

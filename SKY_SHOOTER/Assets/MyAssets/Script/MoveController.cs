@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class MoveController : MonoBehaviour
 {
-    public float MOVE_SPEED;
+    public float MOVE_SPEED = 50.0f;
     public float MOVE_Z;
 
 

@@ -5649,7 +5649,7 @@ GameObject:
   - component: {fileID: 2259857948388285141}
   m_Layer: 8
   m_Name: AircraftJetWhite
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5703,7 +5703,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e0430ee97f8eca9498b3ca9db9c25875, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MOVE_SPEED: 30
+  MOVE_SPEED: 50
   MOVE_Z: 0
 --- !u!114 &2259857948388285139
 MonoBehaviour:
@@ -6791,7 +6791,7 @@ GameObject:
   - component: {fileID: 2259857948930378452}
   m_Layer: 8
   m_Name: CameraTarget
-  m_TagString: Player
+  m_TagString: CameraTarget
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7430,7 +7430,7 @@ ParticleSystem:
         m_RotationOrder: 4
     startSizeY:
       serializedVersion: 2
-      minMaxState: 0
+      minMaxState: 3
       scalar: 1
       minScalar: 1
       maxCurve:
@@ -7483,7 +7483,7 @@ ParticleSystem:
         m_RotationOrder: 4
     startSizeZ:
       serializedVersion: 2
-      minMaxState: 0
+      minMaxState: 3
       scalar: 1
       minScalar: 1
       maxCurve:
@@ -21650,7 +21650,7 @@ TrailRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Time: 2
+  m_Time: 0.6
   m_Parameters:
     serializedVersion: 3
     widthMultiplier: 1.2
@@ -21990,7 +21990,7 @@ TrailRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Time: 2
+  m_Time: 0.6
   m_Parameters:
     serializedVersion: 3
     widthMultiplier: 1.2
