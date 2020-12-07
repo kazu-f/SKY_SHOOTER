@@ -8,6 +8,7 @@ public class EnemyMove : MonoBehaviour
     public float MOVE_SPEED = 50.0f;          //移動速度。
     public Vector3 MOVE_DIRECTION = Vector3.back;   //移動方向。
     public float RETURN_DISTANCE = 50.0f;     //帰還し始めるプレイヤーとの距離。
+    public GameObject ShotPoint;              //ショットポイント。
 
     Transform playerTrans;                          //プレイヤーの位置情報。
     Rigidbody rigidbody;
@@ -28,6 +29,8 @@ public class EnemyMove : MonoBehaviour
         if (IsNearDistance())
         {
             ReturnEnemy();
+            var shot = ShotPoint.GetComponent<EnemyShotControl>();
+            shot.DisableShot();             //ショットをやめさせる。
         }
         else
         {
