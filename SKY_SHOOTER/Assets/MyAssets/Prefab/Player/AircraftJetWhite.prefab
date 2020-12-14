@@ -5647,6 +5647,7 @@ GameObject:
   - component: {fileID: 2259857948388285143}
   - component: {fileID: 2259857948388285142}
   - component: {fileID: 2259857948388285141}
+  - component: {fileID: 5968677899553353181}
   m_Layer: 8
   m_Name: AircraftJetWhite
   m_TagString: Player
@@ -5849,6 +5850,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   raiseAtAltitude: 20
   lowerAtAltitude: 20
+--- !u!114 &5968677899553353181
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2259857948388285130}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8a4f8e41eb759294dbf59edf27842f12, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_HP: 3
 --- !u!1 &2259857948389282323
 GameObject:
   m_ObjectHideFlags: 0

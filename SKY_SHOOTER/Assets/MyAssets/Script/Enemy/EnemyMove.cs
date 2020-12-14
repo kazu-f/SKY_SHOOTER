@@ -26,20 +26,33 @@ public class EnemyMove : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (IsNearDistance())
+        if (playerTrans != null)
         {
-            ReturnEnemy();
-            var shot = ShotPoint.GetComponent<EnemyShotControl>();
-            shot.DisableShot();             //ショットをやめさせる。
+            if (IsNearDistance())
+            {
+                ReturnEnemy(playerTrans.position);
+                var shot = ShotPoint.GetComponent<EnemyShotControl>();
+                shot.DisableShot();             //ショットをやめさせる。
+            }
+            else
+            {
+                MoveEnemy();
+            }
+            //プレイヤーより後ろに行ったら消える。
+            if (CalcDistance() < 0.0f)
+            {
+                Destroy(gameObject, 1.0f);
+            }
         }
         else
         {
-            MoveEnemy();
-        }
-        //プレイヤーより後ろに行ったら消える。
-        if(CalcDistance() < 0.0f)
-        {
-            Destroy(gameObject,1.0f);
+            var shot = ShotPoint.GetComponent<EnemyShotControl>();
+            shot.DisableShot();             //ショットをやめさせる。
+            //適当に帰らせる
+            ReturnEnemy(new Vector3(0.0f, 0.0f, 0.0f));
+
+            //時間経過で消える。
+            Destroy(gameObject, 3.0f);
         }
     }
 
@@ -50,10 +63,10 @@ public class EnemyMove : MonoBehaviour
         rigidbody.velocity = vMove;
     }
     //近くまで来たらどこかへやる。
-    void ReturnEnemy()
+    void ReturnEnemy(Vector3 plPos)
     {
         //帰っていく向きを決める。
-        Vector3 returnDir = transform.position - playerTrans.position;
+        Vector3 returnDir = transform.position - plPos;
         returnDir.z = 0.0f;
         returnDir.Normalize();
         if (Math.Abs(returnDir.y) < 0.1f)
@@ -70,8 +83,8 @@ public class EnemyMove : MonoBehaviour
     }
 
     bool IsNearDistance()
-    {
-        float Distance = CalcDistance(); 
+    {         
+        float Distance = CalcDistance();
 
         return Distance < RETURN_DISTANCE;
     }

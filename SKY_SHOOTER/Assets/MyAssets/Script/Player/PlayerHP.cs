@@ -2,17 +2,17 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class EnemyHP : IHPControl
+public class PlayerHP : IHPControl
 {
     // Update is called once per frame
     void Update()
     {
-        
+
     }
 
     private void OnTriggerEnter(Collider other)
     {
-        if(other.gameObject.tag == "PBullet")
+        if (other.gameObject.tag == "EBullet")
         {
             //HPを減らす。
             Damage();
@@ -32,7 +32,7 @@ public class EnemyHP : IHPControl
     {
         m_HP--;
     }
-    //Enemyを消す処理。
+    //Playerを消す処理。
     protected override void DeathAircraft()
     {
         Destroy(gameObject);
