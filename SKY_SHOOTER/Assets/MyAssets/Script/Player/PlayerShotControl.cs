@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityStandardAssets.CrossPlatformInput;
 
 public class PlayerShotControl : ShotControl
 {
@@ -14,7 +15,7 @@ public class PlayerShotControl : ShotControl
     void Update()
     {
         if (CountInterval()
-            && Input.GetKey(KeyCode.Z))
+            && CrossPlatformInputManager.GetButton("Fire1"))
         {
             Shot();
         }
