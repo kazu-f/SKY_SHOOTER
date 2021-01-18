@@ -25,22 +25,6 @@ public class MoveController : MonoBehaviour
     void CharacterMove()
     {
         Vector3 vMove = new Vector3(0, 0, 0);
-        //if(Input.GetKey(KeyCode.LeftArrow))
-        //{
-        //    vMove.x = -MOVE_SPEED;
-        //}
-        //else if(Input.GetKey(KeyCode.RightArrow))
-        //{
-        //    vMove.x = MOVE_SPEED;
-        //}
-        //if(Input.GetKey(KeyCode.UpArrow))
-        //{
-        //    vMove.y = MOVE_SPEED;
-        //}
-        //else if(Input.GetKey(KeyCode.DownArrow))
-        //{
-        //    vMove.y = -MOVE_SPEED;
-        //}
 
         if (CrossPlatformInputManager.GetButton("LeftButton"))
         {

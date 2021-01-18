@@ -9514,7 +9514,7 @@ GameObject:
   - component: {fileID: 8895786388732874306}
   m_Layer: 8
   m_Name: WheelFront
-  m_TagString: Untagged
+  m_TagString: EnemyCollider
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -14289,7 +14289,7 @@ GameObject:
   - component: {fileID: 8895786388732874310}
   m_Layer: 8
   m_Name: WheelLeft
-  m_TagString: Untagged
+  m_TagString: EnemyCollider
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -14350,7 +14350,7 @@ GameObject:
   - component: {fileID: 8895786388732874304}
   m_Layer: 8
   m_Name: WheelRight
-  m_TagString: Untagged
+  m_TagString: EnemyCollider
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -14690,7 +14690,7 @@ GameObject:
   - component: {fileID: 8895786388733873154}
   m_Layer: 8
   m_Name: BodyCentreCapsule
-  m_TagString: Untagged
+  m_TagString: EnemyCollider
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -14736,7 +14736,7 @@ GameObject:
   - component: {fileID: 8895786388739352482}
   m_Layer: 8
   m_Name: TailfinRightBox
-  m_TagString: Untagged
+  m_TagString: EnemyCollider
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -14926,7 +14926,7 @@ GameObject:
   - component: {fileID: 8895786388739352486}
   m_Layer: 8
   m_Name: AileronLeftBox
-  m_TagString: Untagged
+  m_TagString: EnemyCollider
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -20255,7 +20255,7 @@ GameObject:
   - component: {fileID: 8895786388733998946}
   m_Layer: 8
   m_Name: NoseSphere
-  m_TagString: Untagged
+  m_TagString: EnemyCollider
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -20618,7 +20618,7 @@ GameObject:
   - component: {fileID: 8895786388739352480}
   m_Layer: 8
   m_Name: WingRightBox
-  m_TagString: Untagged
+  m_TagString: EnemyCollider
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -20829,7 +20829,7 @@ GameObject:
   - component: {fileID: 8895786388733873158}
   m_Layer: 8
   m_Name: BodyRightCapsule
-  m_TagString: Untagged
+  m_TagString: EnemyCollider
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -20874,7 +20874,7 @@ GameObject:
   - component: {fileID: 8895786388733873152}
   m_Layer: 8
   m_Name: BodyLeftCapsule
-  m_TagString: Untagged
+  m_TagString: EnemyCollider
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -20999,7 +20999,7 @@ GameObject:
   - component: {fileID: 8895786388739352484}
   m_Layer: 8
   m_Name: WingLeftBox
-  m_TagString: Untagged
+  m_TagString: EnemyCollider
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -21525,7 +21525,7 @@ GameObject:
   - component: {fileID: 8895786388733873156}
   m_Layer: 8
   m_Name: NoseCapsule
-  m_TagString: Untagged
+  m_TagString: EnemyCollider
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -21615,7 +21615,7 @@ GameObject:
   - component: {fileID: 8895786388739352488}
   m_Layer: 8
   m_Name: TailfinLeftBox
-  m_TagString: Untagged
+  m_TagString: EnemyCollider
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -21668,7 +21668,7 @@ GameObject:
   - component: {fileID: 8895786388739352490}
   m_Layer: 8
   m_Name: WingRightBox
-  m_TagString: Untagged
+  m_TagString: EnemyCollider
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
