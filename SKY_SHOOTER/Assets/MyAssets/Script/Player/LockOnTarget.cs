@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityStandardAssets.CrossPlatformInput;
 using System.Linq;
+using UnityEditor;
 
 public class LockOnTarget : MonoBehaviour
 {
@@ -70,33 +71,42 @@ public class LockOnTarget : MonoBehaviour
     //ターゲットを決定する。
     private void DistTarget()
     {
-        //レイを飛ばす。
-        Ray shotRay = new Ray(transform.position, m_vector);    //レイ。
-        RaycastHit hit;                                         //レイの衝突したオブジェクト。
-        const int distance = 500;                               //レイを飛ばす距離。
-        const int radius = 20;                                  //レイの球体の半径。
-
+        const float LENGTH = 30.0f;
         float minLen = float.MaxValue;
-        Collider colTarget = null;
-        if(Physics.SphereCast(transform.position,radius, m_vector, out hit, distance))
+        const float MAXDISTANCE = 500.0f;
+        GameObject Target = null;
+        //敵を全て取得。
+        var enemys = GameObject.FindGameObjectsWithTag("Enemy");
+
+        foreach(var Ene in enemys)
         {
-            //Rayが当たったオブジェクトのタグを調べる。
-            if (hit.collider.tag == "EnemyCollider")
+            //必要なパラメータを作成。
+            Vector3 ePos = Ene.transform.position;
+            Vector3 toEne = ePos - transform.position;
+            //軌道上との距離を測る。
+            float distance = Vector3.Dot(m_vector, toEne);
+            //距離の除外。
+            if(distance > MAXDISTANCE
+                || distance < 0.0f)
             {
-                //距離を測る。
-                float len = Vector3.Distance(hit.collider.transform.position, hit.point);
-                //距離がより近いほうを検索。
-                if(len < minLen)
-                {
-                    colTarget = hit.collider;
-                    minLen = len;
-                }
+                continue;
+            }
+            //軌道上の座標を求める。
+            Vector3 rayPos = m_vector * distance + transform.position;
+            float len = Vector3.Distance(rayPos, ePos);
+            //距離が一定以下。
+            if(len < LENGTH
+                &&len < minLen)
+            {
+                Target = Ene.gameObject;
+                minLen = len;
             }
         }
+
         //コライダーに衝突する。
-        if(colTarget != null)
+        if(Target != null)
         {
-            var enemyMove = colTarget.gameObject.GetComponentInParent<EnemyMove>();
+            var enemyMove = Target;
             TargetObject = enemyMove.gameObject;
         }
         else
