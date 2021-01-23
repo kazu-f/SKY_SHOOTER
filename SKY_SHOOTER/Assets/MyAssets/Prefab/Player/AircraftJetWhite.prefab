@@ -56,7 +56,6 @@ GameObject:
   - component: {fileID: 2259857947848677361}
   - component: {fileID: 2259857947848677372}
   - component: {fileID: 2259857947848677363}
-  - component: {fileID: 2259857947848677362}
   m_Layer: 8
   m_Name: AfterburnerLeft
   m_TagString: Untagged
@@ -4774,19 +4773,6 @@ ParticleSystem:
         m_PostInfinity: 2
         m_RotationOrder: 4
     vectorLabel1_3: W
---- !u!114 &2259857947848677362
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2259857947848677360}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1b878b2bd27dca747855179c7ca76010, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  minColour: {r: 0, g: 0, b: 0, a: 0}
 --- !u!1 &2259857947863627568
 GameObject:
   m_ObjectHideFlags: 0
@@ -5640,13 +5626,8 @@ GameObject:
   - component: {fileID: 2259857948388285131}
   - component: {fileID: 2259857948388285149}
   - component: {fileID: 2259857948388285148}
-  - component: {fileID: 2259857948388285139}
-  - component: {fileID: 2259857948388285138}
-  - component: {fileID: 2259857948388285137}
-  - component: {fileID: 2259857948388285136}
   - component: {fileID: 2259857948388285143}
   - component: {fileID: 2259857948388285142}
-  - component: {fileID: 2259857948388285141}
   - component: {fileID: 5968677899553353181}
   m_Layer: 8
   m_Name: AircraftJetWhite
@@ -5706,105 +5687,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   MOVE_SPEED: 50
   MOVE_Z: 0
---- !u!114 &2259857948388285139
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2259857948388285130}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 235a6615124795442b98c1f03500003e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_MaxEnginePower: 40
-  m_Lift: 0.002
-  m_ZeroLiftSpeed: 300
-  m_RollEffect: 0.75
-  m_PitchEffect: 0.75
-  m_YawEffect: 0.2
-  m_BankedTurnEffect: 0.5
-  m_AerodynamicEffect: 0.02
-  m_AutoTurnPitch: 0.5
-  m_AutoRollLevel: 0.1
-  m_AutoPitchLevel: 0.1
-  m_AirBrakesEffect: 3
-  m_ThrottleChangeSpeed: 0.3
-  m_DragIncreaseFactor: 0.001
---- !u!114 &2259857948388285138
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2259857948388285130}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b297a60c0ddf0ee4dabefaf158fb097d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  maxRollAngle: 80
-  maxPitchAngle: 80
---- !u!114 &2259857948388285137
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2259857948388285130}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1ee34fdb2d383a84e9ef60c30fc2778e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Smoothing: 5
-  m_ControlSurfaces:
-  - transform: {fileID: 2259857948044281764}
-    amount: 30
-    type: 3
-    originalLocalRotation: {x: 0, y: 0, z: 0, w: 0}
-  - transform: {fileID: 2259857949150791680}
-    amount: -30
-    type: 4
-    originalLocalRotation: {x: 0, y: 0, z: 0, w: 0}
-  - transform: {fileID: 2259857949352031343}
-    amount: -30
-    type: 0
-    originalLocalRotation: {x: 0, y: 0, z: 0, w: 0}
-  - transform: {fileID: 2259857948191780538}
-    amount: 30
-    type: 0
-    originalLocalRotation: {x: 0, y: 0, z: 0, w: 0}
---- !u!114 &2259857948388285136
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2259857948388285130}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 66329fe4ad8cd59478fffdc10131da1c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_EngineSound: {fileID: 8300000, guid: 9db9336e9f17c9744847c5fe94c1650f, type: 3}
-  m_EngineMinThrottlePitch: 0.4
-  m_EngineMaxThrottlePitch: 2
-  m_EngineFwdSpeedMultiplier: 0.002
-  m_WindSound: {fileID: 8300000, guid: 38d4d0ff7855e984285fbf430385b2aa, type: 3}
-  m_WindBasePitch: 0.2
-  m_WindSpeedPitchFactor: 0.004
-  m_WindMaxSpeedVolume: 100
-  m_AdvancedSetttings:
-    engineMinDistance: 50
-    engineMaxDistance: 1000
-    engineDopplerLevel: 1
-    engineMasterVolume: 0.5
-    windMinDistance: 10
-    windMaxDistance: 100
-    windDopplerLevel: 1
-    windMasterVolume: 0.5
 --- !u!114 &2259857948388285143
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5836,20 +5718,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &2259857948388285141
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2259857948388285130}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bf6c56c7f8c75ca4c99450be5aca5ace, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  raiseAtAltitude: 20
-  lowerAtAltitude: 20
 --- !u!114 &5968677899553353181
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7090,7 +6958,6 @@ GameObject:
   - component: {fileID: 2259857949145592287}
   - component: {fileID: 2259857949145592282}
   - component: {fileID: 2259857949145592281}
-  - component: {fileID: 2259857949145592280}
   m_Layer: 8
   m_Name: Glow
   m_TagString: Untagged
@@ -11780,19 +11647,6 @@ ParticleSystem:
         m_PostInfinity: 2
         m_RotationOrder: 4
     vectorLabel1_3: W
---- !u!114 &2259857949145592280
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2259857949145592286}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1b878b2bd27dca747855179c7ca76010, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  minColour: {r: 0, g: 0, b: 0, a: 1}
 --- !u!1 &2259857949145717585
 GameObject:
   m_ObjectHideFlags: 0
@@ -11804,7 +11658,6 @@ GameObject:
   - component: {fileID: 2259857949145717586}
   - component: {fileID: 2259857949145717597}
   - component: {fileID: 2259857949145717596}
-  - component: {fileID: 2259857949145717587}
   m_Layer: 8
   m_Name: AfterburnerRight
   m_TagString: Untagged
@@ -16522,19 +16375,6 @@ ParticleSystem:
         m_PostInfinity: 2
         m_RotationOrder: 4
     vectorLabel1_3: W
---- !u!114 &2259857949145717587
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2259857949145717585}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1b878b2bd27dca747855179c7ca76010, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  minColour: {r: 0, g: 0, b: 0, a: 0}
 --- !u!1 &2259857949150791687
 GameObject:
   m_ObjectHideFlags: 0
@@ -16625,7 +16465,6 @@ GameObject:
   - component: {fileID: 2259857949169423651}
   - component: {fileID: 2259857949169423662}
   - component: {fileID: 2259857949169423661}
-  - component: {fileID: 2259857949169423660}
   m_Layer: 8
   m_Name: VapourTrailSystem
   m_TagString: Untagged
@@ -21360,19 +21199,6 @@ ParticleSystemRenderer:
   m_Mesh2: {fileID: 0}
   m_Mesh3: {fileID: 0}
   m_MaskInteraction: 0
---- !u!114 &2259857949169423660
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2259857949169423650}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1b878b2bd27dca747855179c7ca76010, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  minColour: {r: 0, g: 0, b: 0, a: 0}
 --- !u!1 &2259857949195294838
 GameObject:
   m_ObjectHideFlags: 0
@@ -22160,7 +21986,6 @@ GameObject:
   - component: {fileID: 2259857949701371087}
   - component: {fileID: 2259857949701371082}
   - component: {fileID: 2259857949701371081}
-  - component: {fileID: 2259857949701371080}
   m_Layer: 8
   m_Name: Glow
   m_TagString: Untagged
@@ -26850,19 +26675,6 @@ ParticleSystem:
         m_PostInfinity: 2
         m_RotationOrder: 4
     vectorLabel1_3: W
---- !u!114 &2259857949701371080
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2259857949701371086}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1b878b2bd27dca747855179c7ca76010, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  minColour: {r: 0, g: 0, b: 0, a: 1}
 --- !u!1 &4953965094008971686
 GameObject:
   m_ObjectHideFlags: 0
