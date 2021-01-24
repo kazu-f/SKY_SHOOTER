@@ -10,23 +10,6 @@ public class EnemyHP : IHPControl
         
     }
 
-    private void OnTriggerEnter(Collider other)
-    {
-        if(other.gameObject.tag == "PBullet")
-        {
-            //HPを減らす。
-            Damage();
-
-            //当たった弾を消しておく。
-            Destroy(other.gameObject);
-
-            //HPが0になったか？
-            if (IsDead())
-            {
-                DeathAircraft();
-            }
-        }
-    }
     //ダメージを受ける。
     protected override void Damage()
     {

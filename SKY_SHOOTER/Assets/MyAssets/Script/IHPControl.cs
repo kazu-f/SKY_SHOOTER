@@ -5,6 +5,7 @@ using UnityEngine;
 public abstract class IHPControl : MonoBehaviour
 {
     public int m_HP = 3;
+    public string BulletTag;
 
     protected Rigidbody rigidbody;
 
@@ -12,6 +13,24 @@ public abstract class IHPControl : MonoBehaviour
     void Start()
     {
         rigidbody = GetComponent<Rigidbody>();
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.tag == BulletTag)
+        {
+            //HPを減らす。
+            Damage();
+
+            //当たった弾を消しておく。
+            Destroy(other.gameObject);
+
+            //HPが0になったか？
+            if (IsDead())
+            {
+                DeathAircraft();
+            }
+        }
     }
 
     //ダメージを受ける。

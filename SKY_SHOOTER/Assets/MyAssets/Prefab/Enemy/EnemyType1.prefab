@@ -14474,6 +14474,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_HP: 3
+  BulletTag: PBullet
 --- !u!1 &8895786388745801642
 GameObject:
   m_ObjectHideFlags: 0
