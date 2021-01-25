@@ -213,30 +213,15 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3309175131000082126, guid: 87fa21db4186fd74fbd79d36a5d7b9da,
+        type: 3}
+      propertyPath: ShotInterval
+      value: 0.5
+      objectReference: {fileID: 0}
     - target: {fileID: 8856692178082170772, guid: 87fa21db4186fd74fbd79d36a5d7b9da,
         type: 3}
       propertyPath: m_Name
       value: Boss
-      objectReference: {fileID: 0}
-    - target: {fileID: 8856692178082470836, guid: 87fa21db4186fd74fbd79d36a5d7b9da,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8856692178082470836, guid: 87fa21db4186fd74fbd79d36a5d7b9da,
-        type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8856692178082470836, guid: 87fa21db4186fd74fbd79d36a5d7b9da,
-        type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8856692178082470836, guid: 87fa21db4186fd74fbd79d36a5d7b9da,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8856692178082470836, guid: 87fa21db4186fd74fbd79d36a5d7b9da,
         type: 3}
