@@ -34,6 +34,7 @@ public class BossMoveControl : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        //移動に関する処理を行う。
         currentState.Execute();
     }
     //移動先の座標を設定。
@@ -75,5 +76,10 @@ public class BossMoveControl : MonoBehaviour
         currentState = m_States[(int)state];
         //事前処理。
         currentState.Enter();
+    }
+    //ショットを撃てるか？
+    public bool IsShot()
+    {
+        return currentState.IsShot();
     }
 }
