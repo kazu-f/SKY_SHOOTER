@@ -106,8 +106,7 @@ public class LockOnTarget : MonoBehaviour
         //コライダーに衝突する。
         if(Target != null)
         {
-            var enemyMove = Target;
-            TargetObject = enemyMove.gameObject;
+            TargetObject = Target.gameObject;
         }
         else
         {

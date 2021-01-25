@@ -6,17 +6,17 @@ public class Bullet : MonoBehaviour
 {
     public float MOVE_SPEED;
     Vector3 moveDir;
+    Rigidbody rigidbody;
 
     // Start is called before the first frame update
     void Start()
     {
-        //moveDir = new Vector3(0.0f,0.0f,1.0f);
+        rigidbody = GetComponent<Rigidbody>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        var rigidbody = GetComponent<Rigidbody>();
         rigidbody.velocity = new Vector3(
             moveDir.x * MOVE_SPEED,
             moveDir.y * MOVE_SPEED,
