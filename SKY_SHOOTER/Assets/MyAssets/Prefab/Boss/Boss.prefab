@@ -83,10 +83,6 @@ MonoBehaviour:
   - {fileID: 4570082480414689503}
   - {fileID: 5603056151863590965}
   - {fileID: 7807371207477362206}
-  SHOT_ROT:
-  - {x: 0, y: 0, z: 0, w: 0}
-  - {x: 0, y: 0, z: 0, w: 0}
-  - {x: 0, y: 0, z: 0, w: 0}
 --- !u!1 &3024910252113546220
 GameObject:
   m_ObjectHideFlags: 0
@@ -675,8 +671,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 254a69c62c451124a84e280b3074fcfc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MoveMaxPos: {x: 50, y: 50}
-  MoveMinPos: {x: -50, y: -50}
+  MoveMaxPos: {x: 75, y: 50}
+  MoveMinPos: {x: -75, y: -50}
   MOVE_SPEED: 200
   MOVE_SECONDS: 2
   IDLE_SECONDS: 5
