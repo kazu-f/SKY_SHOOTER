@@ -5,6 +5,7 @@ using UnityEngine;
 public class GeneratePoint : MonoBehaviour
 {
     public GameObject prefab;
+    public Color color;
     // Start is called before the first frame update
     void Start()
     {
@@ -30,8 +31,11 @@ public class GeneratePoint : MonoBehaviour
         Vector3 offset = new Vector3(0.0f, 0.5f, 0.0f);
 
         //球を表示。
-        Gizmos.color = new Color(1.0f, 0.0f, 0.0f, 0.5f);
-        Gizmos.DrawSphere(transform.position + offset, 0.5f);
+        color.a = 0.5f;
+        Gizmos.color = color;
+        Gizmos.DrawSphere(transform.position + offset, 5.5f);
+        Gizmos.color = color;
+        Gizmos.DrawRay(transform.position + offset, transform.forward * 10.0f);
 
         //プレファブ名のアイコンを表示。
         if(prefab != null)
