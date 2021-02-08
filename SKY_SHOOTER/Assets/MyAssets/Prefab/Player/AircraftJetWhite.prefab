@@ -5687,6 +5687,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   MOVE_SPEED: 50
   MOVE_Z: 0
+  MOVE_MAXPOS: {x: 75, y: 50}
+  MOVE_MINPOS: {x: -75, y: -50}
 --- !u!114 &2259857948388285143
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -26720,7 +26722,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b7027cce1c3368f4281a59d136fd1a7a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  BulletObject: {fileID: 0}
+  BulletObject: {fileID: 1151537949522894137, guid: e5c7d9c39a15d784c85446174bd9d506,
+    type: 3}
   ShotInterval: 0.2
 --- !u!114 &657173140468697076
 MonoBehaviour:
