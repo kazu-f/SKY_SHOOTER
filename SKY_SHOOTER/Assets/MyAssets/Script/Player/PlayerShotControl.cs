@@ -39,6 +39,9 @@ public class PlayerShotControl : ShotControl
             vDir = target.transform.position - transform.position;
             vDir.Normalize();
         }
+        Quaternion bulletRot = new Quaternion();
+        bulletRot.SetLookRotation(vDir);
+        bullet.transform.rotation = bulletRot;
         bulletComp.SetDirection(vDir);
 
         currentInterval = ShotInterval;
