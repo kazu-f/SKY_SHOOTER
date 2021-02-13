@@ -6,23 +6,30 @@ public class GeneratePoint : MonoBehaviour
 {
     public GameObject prefab;
     public Color color;
+    public float DISTANCE = 500.0f;
+
+    private Transform playerTrans;
+    private bool IsGenerate = false;
     // Start is called before the first frame update
     void Start()
     {
-        //プレファブを座標に作成。
-        GameObject go = Instantiate(
-            prefab,
-            Vector3.zero,
-            Quaternion.identity
-            );
-        //一緒に削除されるように生成したものを子オブジェクトに設定
-        go.transform.SetParent(transform,false);
+        GameObject player = GameObject.FindGameObjectWithTag("Player");
+        playerTrans = player.transform;
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+        //プレイヤーがいないなら無視
+        if (playerTrans == null) return;
+
+        Vector3 dist = playerTrans.position - transform.position;
+        dist.x = 0;
+        dist.y = 0;
+        if(dist.magnitude < DISTANCE)
+        {
+            GenerateInstance();
+        }
     }
     //ステージエディット中のためにシーンにギズモを表示
     void OnDrawGizmos()
@@ -43,5 +50,25 @@ public class GeneratePoint : MonoBehaviour
             Gizmos.DrawIcon(transform.position + offset, prefab.name, true);
         }
 
+    }
+
+    //生成処理。
+    void GenerateInstance()
+    {
+        //生成済みなら無視。
+        if(IsGenerate == true)
+        {
+            return;
+        }
+        //プレファブを座標に作成。
+        GameObject go = Instantiate(
+            prefab,
+            Vector3.zero,
+            Quaternion.identity
+            );
+        //一緒に削除されるように生成したものを子オブジェクトに設定
+        go.transform.SetParent(transform, false);
+
+        IsGenerate = true;
     }
 }

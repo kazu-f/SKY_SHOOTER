@@ -9,6 +9,7 @@ TagManager:
   - PBullet
   - EBullet
   - EnemyCollider
+  - GeneratePoint
   layers:
   - Default
   - TransparentFX
