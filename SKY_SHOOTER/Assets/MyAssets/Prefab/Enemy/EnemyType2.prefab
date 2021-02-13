@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8835262483392449109}
   - component: {fileID: 1635451587276375533}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: ShotPoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -56,7 +56,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3338680167333191414}
   - component: {fileID: 7942254729640068128}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Box
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -101,7 +101,7 @@ GameObject:
   - component: {fileID: 3472617782328090201}
   - component: {fileID: 3482576447227306251}
   - component: {fileID: 3491003564463928315}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: StarSparrow3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -179,7 +179,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3471766448415989641}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Collider
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -212,7 +212,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1575453705357367590}
   - component: {fileID: 4047028164115105510}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Capsule
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -258,7 +258,7 @@ GameObject:
   - component: {fileID: 6780622948211502387}
   - component: {fileID: 6780622948230992257}
   - component: {fileID: 6780622948230899745}
-  m_Layer: 8
+  m_Layer: 9
   m_Name: AfterburnerCenter
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4986,7 +4986,7 @@ GameObject:
   - component: {fileID: 6780622948211502437}
   - component: {fileID: 6780622948230992261}
   - component: {fileID: 6780622948230899749}
-  m_Layer: 8
+  m_Layer: 9
   m_Name: Glow
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9689,7 +9689,7 @@ GameObject:
   - component: {fileID: 6780622948221108869}
   - component: {fileID: 3772386776247070890}
   - component: {fileID: 71624050993366592}
-  m_Layer: 8
+  m_Layer: 9
   m_Name: EnemyType2
   m_TagString: Enemy
   m_Icon: {fileID: 0}
@@ -9799,7 +9799,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6780622948211502457}
-  m_Layer: 8
+  m_Layer: 9
   m_Name: Particles
   m_TagString: Untagged
   m_Icon: {fileID: 0}

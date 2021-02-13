@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 5618908700718618295}
   - component: {fileID: 7680985420846865629}
   - component: {fileID: 8147224390683798289}
-  m_Layer: 8
+  m_Layer: 9
   m_Name: Glow
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4711,7 +4711,7 @@ GameObject:
   - component: {fileID: 2303621215214257605}
   - component: {fileID: 5409975749565741437}
   - component: {fileID: 3686915335955758651}
-  m_Layer: 8
+  m_Layer: 9
   m_Name: AfterburnerLeft2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9437,7 +9437,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7807371207477362206}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: ShotPointLeft
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9468,7 +9468,7 @@ GameObject:
   m_Component:
   - component: {fileID: 385925510765609298}
   - component: {fileID: 3309175131000082126}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: ShotPoints
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9521,7 +9521,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8056843887200366641}
   - component: {fileID: 3108388890286891047}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Box
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9564,7 +9564,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4570082480414689503}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: ShotPointCenter
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9596,7 +9596,7 @@ GameObject:
   - component: {fileID: 2001057359342649013}
   - component: {fileID: 2272961026710861892}
   - component: {fileID: 7739279652770632473}
-  m_Layer: 8
+  m_Layer: 9
   m_Name: Glow
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14296,7 +14296,7 @@ GameObject:
   - component: {fileID: 8786390647030895640}
   - component: {fileID: 5508658102350970829}
   - component: {fileID: 2802178402701832505}
-  m_Layer: 8
+  m_Layer: 9
   m_Name: AfterburnerRight1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -19024,7 +19024,7 @@ GameObject:
   - component: {fileID: 1139618715633347490}
   - component: {fileID: 1214491454251588600}
   - component: {fileID: 818009436744758925}
-  m_Layer: 8
+  m_Layer: 9
   m_Name: Glow
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -23724,7 +23724,7 @@ GameObject:
   - component: {fileID: 7480409745069027276}
   - component: {fileID: 1122950417494099180}
   - component: {fileID: 7368722359896337722}
-  m_Layer: 8
+  m_Layer: 9
   m_Name: Glow
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -28423,7 +28423,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1042518581078873650}
   - component: {fileID: 8808146612121287840}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Capsule
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -28469,7 +28469,7 @@ GameObject:
   - component: {fileID: 6506429673485386840}
   - component: {fileID: 6497986179252401428}
   - component: {fileID: 6487983494873047918}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: StarSparrow4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -28549,7 +28549,7 @@ GameObject:
   - component: {fileID: 7812951533050546280}
   - component: {fileID: 7698265672806086929}
   - component: {fileID: 1957000745948357578}
-  m_Layer: 8
+  m_Layer: 9
   m_Name: AfterburnerCenter
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -33275,7 +33275,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5603056151863590965}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: ShotPointRight
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -33307,7 +33307,7 @@ GameObject:
   - component: {fileID: 9169549215699547714}
   - component: {fileID: 1407258376809828838}
   - component: {fileID: 5876044357483090656}
-  m_Layer: 8
+  m_Layer: 9
   m_Name: AfterburnerRight2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -38033,7 +38033,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1613655956588402205}
-  m_Layer: 8
+  m_Layer: 9
   m_Name: Particles
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -38068,7 +38068,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 417135015882553476}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Collider
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -38102,7 +38102,7 @@ GameObject:
   - component: {fileID: 4693046676183670986}
   - component: {fileID: 6372343945664645164}
   - component: {fileID: 4211766125331960397}
-  m_Layer: 8
+  m_Layer: 9
   m_Name: AfterburnerLeft1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -42834,7 +42834,7 @@ GameObject:
   - component: {fileID: 2104390635325501293}
   - component: {fileID: 4416313850901610100}
   - component: {fileID: 2496786453555464399}
-  m_Layer: 8
+  m_Layer: 9
   m_Name: Boss
   m_TagString: Enemy
   m_Icon: {fileID: 0}
@@ -42962,7 +42962,7 @@ GameObject:
   - component: {fileID: 4873908526719426831}
   - component: {fileID: 1295854687902642899}
   - component: {fileID: 5712004101243096585}
-  m_Layer: 8
+  m_Layer: 9
   m_Name: Glow
   m_TagString: Untagged
   m_Icon: {fileID: 0}
