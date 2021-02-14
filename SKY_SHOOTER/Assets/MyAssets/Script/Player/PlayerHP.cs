@@ -18,6 +18,7 @@ public class PlayerHP : IHPControl
     //Playerを消す処理。
     protected override void DeathAircraft()
     {
+        DeathEffect();
         Destroy(gameObject);
     }
 }

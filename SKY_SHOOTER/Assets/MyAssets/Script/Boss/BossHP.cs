@@ -13,6 +13,7 @@ public class BossHP : IHPControl
     //ダメージを受ける。
     protected override void Damage()
     {
+        if (!this.enabled) return;
         m_HP--;
     }
     //Bossを消す処理。

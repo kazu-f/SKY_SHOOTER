@@ -6,6 +6,8 @@ public abstract class IHPControl : MonoBehaviour
 {
     public int m_HP = 3;
     public string BulletTag;
+    public GameObject Damage_Particle;
+    public GameObject Death_Particle;
 
     protected Rigidbody rigidbody;
 
@@ -21,6 +23,8 @@ public abstract class IHPControl : MonoBehaviour
         {
             //HPを減らす。
             Damage();
+            //エフェクトを再生。
+            DamageEffect(other.transform.position);
 
             //当たった弾を消しておく。
             Destroy(other.gameObject);
@@ -35,6 +39,26 @@ public abstract class IHPControl : MonoBehaviour
 
     //ダメージを受ける。
     protected abstract void Damage();
+    //ダメージのエフェクトを出す。
+    protected void DamageEffect(Vector3 pos)
+    {
+        //エフェクトを生成。
+        Instantiate(
+            Damage_Particle,
+            pos,
+            Quaternion.identity
+            );
+    }
+    //死亡時のエフェクトを出す。
+    protected void DeathEffect()
+    {
+        //エフェクトを生成。
+        Instantiate(
+            Death_Particle,
+            transform.position,
+            Quaternion.identity
+            );
+    }
     //消す処理。
     protected abstract void DeathAircraft();
 

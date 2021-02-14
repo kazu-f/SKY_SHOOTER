@@ -18,6 +18,7 @@ public class EnemyHP : IHPControl
     //Enemyを消す処理。
     protected override void DeathAircraft()
     {
+        DeathEffect();
         Destroy(gameObject);
     }
 }

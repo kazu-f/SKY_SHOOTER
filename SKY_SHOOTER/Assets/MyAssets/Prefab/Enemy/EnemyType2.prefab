@@ -9790,6 +9790,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_HP: 3
   BulletTag: PBullet
+  Damage_Particle: {fileID: 5995870742953777383, guid: 11969d9c49e405946883ea6afdaf4722,
+    type: 3}
+  Death_Particle: {fileID: 692697612602204091, guid: 621e16367062df94e980663e3df5088e,
+    type: 3}
 --- !u!1 &6780622948211732825
 GameObject:
   m_ObjectHideFlags: 0

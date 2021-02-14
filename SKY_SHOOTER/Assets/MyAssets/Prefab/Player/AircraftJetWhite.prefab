@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 2259857947848677361}
   - component: {fileID: 2259857947848677372}
   - component: {fileID: 2259857947848677363}
-  m_Layer: 8
+  m_Layer: 10
   m_Name: AfterburnerLeft
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4742,7 +4742,7 @@ GameObject:
   - component: {fileID: 2259857948388285143}
   - component: {fileID: 2259857948388285142}
   - component: {fileID: 5968677899553353181}
-  m_Layer: 8
+  m_Layer: 10
   m_Name: AircraftJetWhite
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -4844,6 +4844,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_HP: 3
   BulletTag: EBullet
+  Damage_Particle: {fileID: 5995870742953777383, guid: 11969d9c49e405946883ea6afdaf4722,
+    type: 3}
+  Death_Particle: {fileID: 692697612602204091, guid: 621e16367062df94e980663e3df5088e,
+    type: 3}
 --- !u!1 &2259857948911627333
 GameObject:
   m_ObjectHideFlags: 0
@@ -4853,7 +4857,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2259857948911627334}
-  m_Layer: 8
+  m_Layer: 10
   m_Name: Particles
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4886,7 +4890,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2259857948930378452}
-  m_Layer: 8
+  m_Layer: 10
   m_Name: CameraTarget
   m_TagString: CameraTarget
   m_Icon: {fileID: 0}
@@ -4918,7 +4922,7 @@ GameObject:
   - component: {fileID: 2259857949145592287}
   - component: {fileID: 2259857949145592282}
   - component: {fileID: 2259857949145592281}
-  m_Layer: 8
+  m_Layer: 10
   m_Name: Glow
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9618,7 +9622,7 @@ GameObject:
   - component: {fileID: 2259857949145717586}
   - component: {fileID: 2259857949145717597}
   - component: {fileID: 2259857949145717596}
-  m_Layer: 8
+  m_Layer: 10
   m_Name: AfterburnerRight
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14346,7 +14350,7 @@ GameObject:
   - component: {fileID: 2259857949701371087}
   - component: {fileID: 2259857949701371082}
   - component: {fileID: 2259857949701371081}
-  m_Layer: 8
+  m_Layer: 10
   m_Name: Glow
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -19046,7 +19050,7 @@ GameObject:
   - component: {fileID: 719001518256577526}
   - component: {fileID: 4465829635409528285}
   - component: {fileID: 3431471924383616614}
-  m_Layer: 8
+  m_Layer: 10
   m_Name: Glow
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -23746,7 +23750,7 @@ GameObject:
   - component: {fileID: 65809463922134191}
   - component: {fileID: 8404080689685590456}
   - component: {fileID: 189272660342116340}
-  m_Layer: 8
+  m_Layer: 10
   m_Name: AfterburnerCenter
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -28475,7 +28479,7 @@ GameObject:
   - component: {fileID: 2004780893574832276}
   - component: {fileID: 657173140468697076}
   - component: {fileID: 4756998592629031583}
-  m_Layer: 8
+  m_Layer: 10
   m_Name: ShotPoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -28547,7 +28551,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8727787173302866090}
   - component: {fileID: 8788812878025622698}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Collider3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -28592,7 +28596,7 @@ GameObject:
   - component: {fileID: 8727489659179307540}
   - component: {fileID: 8747191292480078930}
   - component: {fileID: 8738533063394520990}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: StarSparrow1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -28671,7 +28675,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8727551003550854036}
   - component: {fileID: 8788323301585932640}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Collider5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -28715,7 +28719,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8719323040376788404}
   - component: {fileID: 8789240555909416770}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Collider4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -28759,7 +28763,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8719395315804474634}
   - component: {fileID: 8789048350359931004}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Collider2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -28803,7 +28807,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8719142638898766450}
   - component: {fileID: 8788283053294251242}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Collider6
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -28847,7 +28851,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8718999339593708414}
   - component: {fileID: 8788908657793658986}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Collider1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -28890,7 +28894,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8727503936857498994}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Collider
   m_TagString: Untagged
   m_Icon: {fileID: 0}

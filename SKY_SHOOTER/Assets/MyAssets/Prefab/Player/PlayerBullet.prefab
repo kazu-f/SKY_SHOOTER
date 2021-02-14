@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 920323020165299146}
   - component: {fileID: 910680075030356214}
   - component: {fileID: 902907051001167854}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Missile
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -88,7 +88,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 926309152692257356}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Collider
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -120,7 +120,7 @@ GameObject:
   m_Component:
   - component: {fileID: 920033424248585886}
   - component: {fileID: 881920958687845224}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Collider1
   m_TagString: PBullet
   m_Icon: {fileID: 0}
@@ -166,7 +166,7 @@ GameObject:
   - component: {fileID: 8320750949689944084}
   - component: {fileID: 5551572894078616251}
   - component: {fileID: 1427139713660437746}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: PlayerBullet
   m_TagString: PBullet
   m_Icon: {fileID: 0}
