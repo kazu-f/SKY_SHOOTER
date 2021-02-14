@@ -33,4 +33,9 @@ public class PlayerHP : IHPControl
     {
         return CoolTime < currentTime;
     }
+
+    public int GetHP()
+    {
+        return m_HP;
+    }
 }
