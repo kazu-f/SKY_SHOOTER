@@ -19,7 +19,7 @@ public class BossControlManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(hpControl.m_HP > 0)
+        if(hpControl.GetHP() > 0)
         {
             shotControl.SetShotFlag(moveControl.IsShot());
         }
@@ -37,5 +37,9 @@ public class BossControlManager : MonoBehaviour
         moveControl.enabled = true;
         shotControl.enabled = true;
         hpControl.enabled = true;
+    }
+    public bool IsDead()
+    {
+        return hpControl.GetHP() <= 0;
     }
 }

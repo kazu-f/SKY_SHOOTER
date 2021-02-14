@@ -67,4 +67,9 @@ public abstract class IHPControl : MonoBehaviour
     {
         return m_HP <= 0;
     }
+    //HPを取得。
+    public int GetHP()
+    {
+        return m_HP;
+    }
 }

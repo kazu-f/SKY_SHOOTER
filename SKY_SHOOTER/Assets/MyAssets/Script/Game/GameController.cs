@@ -8,6 +8,8 @@ public class GameController : MonoBehaviour
     public PlayerHP playerHP;
     public UIPlayerHP plHP_UI;
     public float TitleReturnTime = 2.0f;
+
+    bool BossClearFlag = false;
     // Start is called before the first frame update
     void Start()
     {
@@ -20,7 +22,8 @@ public class GameController : MonoBehaviour
         //残機表示の更新
         plHP_UI.UpdateLifeIcon(playerHP.GetHP());
 
-        if(playerHP.GetHP() <= 0)
+        if(playerHP.GetHP() <= 0
+            || BossClearFlag)
         {
             //Updateを止める。
             enabled = false;
@@ -33,5 +36,10 @@ public class GameController : MonoBehaviour
     void ReturnToTitle()
     {
         SceneManager.LoadScene("TitleScene");
+    }
+    //ボスを倒した。
+    public void EnableClearFlag()
+    {
+        BossClearFlag = true;
     }
 }
