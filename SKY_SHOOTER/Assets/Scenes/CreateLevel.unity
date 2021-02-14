@@ -478,11 +478,6 @@ PrefabInstance:
       propertyPath: MOVE_Z
       value: 20
       objectReference: {fileID: 0}
-    - target: {fileID: 4756998592629031583, guid: 98fbe9153b18ede4d83fbde1ca3d19df,
-        type: 3}
-      propertyPath: LINE_WEIDTH
-      value: 0.5
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 98fbe9153b18ede4d83fbde1ca3d19df, type: 3}
 --- !u!1 &1489182156
