@@ -64,4 +64,9 @@ public class MoveController : MonoBehaviour
 
         transform.position = newPos;
     }
+
+    public void SetMoveZ(float speed)
+    {
+        MOVE_Z = speed;
+    }
 }

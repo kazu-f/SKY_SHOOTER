@@ -4796,7 +4796,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   MOVE_SPEED: 50
-  MOVE_Z: 0
+  MOVE_Z: 20
   MOVE_MAXPOS: {x: 75, y: 50}
   MOVE_MINPOS: {x: -75, y: -50}
 --- !u!114 &2259857948388285143
@@ -4842,7 +4842,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8a4f8e41eb759294dbf59edf27842f12, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_HP: 3
+  m_HP: 5
   BulletTag: EBullet
   Damage_Particle: {fileID: 5995870742953777383, guid: 11969d9c49e405946883ea6afdaf4722,
     type: 3}
@@ -28539,9 +28539,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1f5e4c45e3b19ea4c8e93b5aee33068f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  AIMTarget: {fileID: 7798847204272240798, guid: 3f368ce158a2bae4ab6cedb8d09d6ad1,
+  AIMTargetRenderer: {fileID: 7798847204272240798, guid: 3f368ce158a2bae4ab6cedb8d09d6ad1,
     type: 3}
-  TargetColor: {r: 1, g: 0, b: 0, a: 0.2509804}
+  TargetLineColor: {r: 1, g: 0, b: 0, a: 0.2509804}
+  TargetColor: {r: 1, g: 0, b: 0, a: 0.5019608}
+  IdleLineColor: {r: 0, g: 1, b: 0, a: 0.2509804}
+  IdleColor: {r: 0, g: 1, b: 0, a: 0.5019608}
   LINE_WEIDTH: 0.5
 --- !u!1 &8724169435273351762
 GameObject:

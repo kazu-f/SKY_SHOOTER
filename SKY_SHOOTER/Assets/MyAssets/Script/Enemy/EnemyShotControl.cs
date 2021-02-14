@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class EnemyShotControl : ShotControl
 {
-    bool IsShot = true;     //ショットするかどうか。
+    bool IsShot = false;     //ショットするかどうか。
     // Start is called before the first frame update
     void Start()
     {
@@ -34,6 +34,11 @@ public class EnemyShotControl : ShotControl
         bulletComp.SetDirection(vDir);
 
         currentInterval = ShotInterval;
+    }
+    //ショットを始める。
+    public void EnableShot()
+    {
+        IsShot = true;
     }
     //ショットをやめる。
     public void DisableShot()

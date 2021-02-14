@@ -45,4 +45,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   prefab: {fileID: 8895786388745801640, guid: a5a2581b270390f478d2f2d2d35069cc, type: 3}
   color: {r: 0, g: 0, b: 1, a: 0.5}
-  DISTANCE: 300
+  DISTANCE: 500

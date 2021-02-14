@@ -7,15 +7,18 @@ public class BossGeneratePoint : MonoBehaviour
     public GameObject prefab;
     public Color color;
     public float DISTANCE = 500.0f;
+    public float PlayerDISTANCE = 120.0f;
     public Mesh GizmosMesh;
     public GameObject particle;
 
+    private GameObject player;
     private Transform playerTrans;
     private bool IsGenerate = false;
+    private bool IsPlayerMoveZOff = false;
     // Start is called before the first frame update
     void Start()
     {
-        GameObject player = GameObject.FindGameObjectWithTag("Player");
+        player = GameObject.FindGameObjectWithTag("Player");
         playerTrans = player.transform;
     }
 
@@ -31,6 +34,12 @@ public class BossGeneratePoint : MonoBehaviour
         if (dist.magnitude < DISTANCE)
         {
             GenerateInstance();
+            PlayerMoveZDown();
+        }
+        if (dist.magnitude < PlayerDISTANCE)
+        {
+            PlayerSpeedOff();
+            Destroy(gameObject);
         }
     }
     //ステージエディット中のためにシーンにギズモを表示
@@ -74,12 +83,37 @@ public class BossGeneratePoint : MonoBehaviour
         //プレファブを座標に作成。
         GameObject go = Instantiate(
             prefab,
-            Vector3.zero,
-            Quaternion.identity
+            transform.position,
+            transform.rotation
             );
         //一緒に削除されるように生成したものを子オブジェクトに設定
-        go.transform.SetParent(transform, false);
+        //go.transform.SetParent(transform, false);
 
         IsGenerate = true;
+    }
+    //プレイヤーのZ移動の速度を落とす。
+    void PlayerMoveZDown()
+    {
+        if (player == null
+            || IsPlayerMoveZOff) return;
+        //zの移動を切る。
+        var moveCompornent = player.GetComponent<MoveController>();
+        moveCompornent.SetMoveZ(12.0f);
+    }
+    //プレイヤーのZ移動を切る。
+    void PlayerSpeedOff()
+    {
+        if (player == null
+            || IsPlayerMoveZOff) return;
+        //zの移動を切る。
+        var moveCompornent = player.GetComponent<MoveController>();
+        moveCompornent.SetMoveZ(0.0f);
+
+        playerTrans.position = new Vector3(
+            playerTrans.position.x,
+            playerTrans.position.y,
+            transform.position.z - PlayerDISTANCE
+            );
+        IsPlayerMoveZOff = true;
     }
 }

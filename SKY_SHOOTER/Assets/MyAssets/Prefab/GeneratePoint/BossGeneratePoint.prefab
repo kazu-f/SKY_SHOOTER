@@ -45,7 +45,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   prefab: {fileID: 8856692178082170772, guid: 87fa21db4186fd74fbd79d36a5d7b9da, type: 3}
   color: {r: 0, g: 0, b: 0, a: 0.5}
-  DISTANCE: 200
+  DISTANCE: 150
+  PlayerDISTANCE: 120
   GizmosMesh: {fileID: 4300004, guid: e0f90ad78680d6145b082ac69f7fc504, type: 3}
   particle: {fileID: 5765340659162705664, guid: 7708b79a2e937274db5fd4e8430a2b9c,
     type: 3}

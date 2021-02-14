@@ -10,6 +10,7 @@ public class GeneratePoint : MonoBehaviour
 
     private Transform playerTrans;
     private bool IsGenerate = false;
+    private GameObject childObj;
     // Start is called before the first frame update
     void Start()
     {
@@ -20,6 +21,12 @@ public class GeneratePoint : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        //子がいなくなったら。
+        if(childObj == null
+            && IsGenerate)
+        {
+            Destroy(gameObject);
+        }
         //プレイヤーがいないなら無視
         if (playerTrans == null) return;
 
@@ -61,13 +68,13 @@ public class GeneratePoint : MonoBehaviour
             return;
         }
         //プレファブを座標に作成。
-        GameObject go = Instantiate(
+        childObj = Instantiate(
             prefab,
             Vector3.zero,
             Quaternion.identity
             );
         //一緒に削除されるように生成したものを子オブジェクトに設定
-        go.transform.SetParent(transform, false);
+        childObj.transform.SetParent(transform, false);
 
         IsGenerate = true;
     }

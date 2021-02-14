@@ -79,7 +79,7 @@ public class LockOnTarget : MonoBehaviour
     {
         const float LENGTH = 30.0f;
         float minLen = float.MaxValue;
-        const float MAXDISTANCE = 500.0f;
+        const float MAXDISTANCE = 250.0f;
         GameObject Target = null;
         //敵を全て取得。
         var enemys = GameObject.FindGameObjectsWithTag("Enemy");

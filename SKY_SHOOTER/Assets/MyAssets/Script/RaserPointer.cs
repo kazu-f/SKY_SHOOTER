@@ -35,9 +35,10 @@ public class RaserPointer : MonoBehaviour
         {
             const float Distance = 140.0f;
             Vector3 targetPos = transform.position + transform.forward * Distance;
+            Vector3 LineEndPos = transform.position + transform.forward * Distance * 0.8f;
             //ラインを引く。
             raserPointer.SetPosition(0, transform.position);
-            raserPointer.SetPosition(1, targetPos);
+            raserPointer.SetPosition(1, LineEndPos);
             raserPointer.startColor = IdleLineColor;
             raserPointer.endColor = IdleLineColor;
 
@@ -49,9 +50,13 @@ public class RaserPointer : MonoBehaviour
         else
         {
             Vector3 enemyPos = m_lockOn.GetTarget().transform.position;
+            Vector3 LineDir = enemyPos - transform.position;    //向き。
+            float Length = LineDir.magnitude;                   //距離。
+            LineDir.Normalize();
+            Vector3 LineEndPos = transform.position + LineDir * Length * 0.8f;
             //ラインを引く。
             raserPointer.SetPosition(0, transform.position);
-            raserPointer.SetPosition(1, enemyPos);
+            raserPointer.SetPosition(1, LineEndPos);
             raserPointer.startColor = TargetLineColor;
             raserPointer.endColor = TargetLineColor;
 
