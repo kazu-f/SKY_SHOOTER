@@ -17,7 +17,12 @@ public class LockOnTarget : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        //ベクトルを初期化。
+        Vector3 vec = new Vector3(0.0f, 0.0f, 0.0f);
+        for (int i = 0; i < MAX_INDEX; i++)
+        {
+            m_oldVecArray[i] = vec;
+        }
     }
 
     // Update is called once per frame
@@ -31,22 +36,23 @@ public class LockOnTarget : MonoBehaviour
     private void AddVector()
     {
         //ベクトルを作成。
+        const float weight = 0.2f;
         Vector3 vec = new Vector3(0.0f, 0.0f, 1.0f);
         if (CrossPlatformInputManager.GetButton("LeftButton"))
         {
-            vec.x = -1.0f;
+            vec.x = -weight;
         }
         if (CrossPlatformInputManager.GetButton("RightButton"))
         {
-            vec.x = 1.0f;
+            vec.x = weight;
         }
         if (CrossPlatformInputManager.GetButton("DownButton"))
         {
-            vec.y = -1.0f;
+            vec.y = -weight;
         }
         if (CrossPlatformInputManager.GetButton("UpButton"))
         {
-            vec.y = 1.0f;
+            vec.y = weight;
         }
         vec.Normalize();
         //記録。

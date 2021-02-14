@@ -4,22 +4,27 @@ using UnityEngine;
 
 public class RaserPointer : MonoBehaviour
 {
+    public Renderer AIMTargetRenderer;
+    public Color TargetLineColor;
     public Color TargetColor;
+    public Color IdleLineColor;
+    public Color IdleColor;
     public float LINE_WEIDTH = 0.5f;
     private LockOnTarget m_lockOn;
     private LineRenderer raserPointer;
+    private Renderer AIMTarget;
 
     // Start is called before the first frame update
     void Start()
     {
+        //照準を作成。
+        AIMTarget = Instantiate(AIMTargetRenderer, transform);
         gameObject.AddComponent<LineRenderer>();
         raserPointer = GetComponent<LineRenderer>();
         m_lockOn = gameObject.GetComponent<LockOnTarget>();
         raserPointer.startWidth = LINE_WEIDTH;
         raserPointer.endWidth = LINE_WEIDTH;
         raserPointer.material = new Material(Shader.Find("Sprites/Default"));
-        raserPointer.startColor = TargetColor;
-        raserPointer.endColor = TargetColor;
     }
 
     // Update is called once per frame
@@ -28,17 +33,33 @@ public class RaserPointer : MonoBehaviour
         if (m_lockOn == null) return;
         if (m_lockOn.GetTarget() == null)
         {
-            DisableRaserPointer();
-            return;
+            const float Distance = 140.0f;
+            Vector3 targetPos = transform.position + transform.forward * Distance;
+            //ラインを引く。
+            raserPointer.SetPosition(0, transform.position);
+            raserPointer.SetPosition(1, targetPos);
+            raserPointer.startColor = IdleLineColor;
+            raserPointer.endColor = IdleLineColor;
+
+            //照準を表示する。
+            AIMTarget.transform.position = targetPos;
+
+            AIMTarget.material.color = IdleColor;
         }
         else
         {
-            EnableRaserPointer();
+            Vector3 enemyPos = m_lockOn.GetTarget().transform.position;
+            //ラインを引く。
+            raserPointer.SetPosition(0, transform.position);
+            raserPointer.SetPosition(1, enemyPos);
+            raserPointer.startColor = TargetLineColor;
+            raserPointer.endColor = TargetLineColor;
+
+            //照準を表示する。
+            AIMTarget.transform.position = enemyPos;
+
+            AIMTarget.material.color = TargetColor;
         }
-        Vector3 enemyPos = m_lockOn.GetTarget().transform.position;
-        //ラインを引く。
-        raserPointer.SetPosition(0, transform.position);
-        raserPointer.SetPosition(1, enemyPos);
     }
     //レーザーポインターを表示する。
     public void EnableRaserPointer()

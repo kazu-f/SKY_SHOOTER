@@ -28539,6 +28539,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1f5e4c45e3b19ea4c8e93b5aee33068f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  AIMTarget: {fileID: 7798847204272240798, guid: 3f368ce158a2bae4ab6cedb8d09d6ad1,
+    type: 3}
   TargetColor: {r: 1, g: 0, b: 0, a: 0.2509804}
   LINE_WEIDTH: 0.5
 --- !u!1 &8724169435273351762
