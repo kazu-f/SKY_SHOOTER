@@ -7,6 +7,7 @@ public class GameController : MonoBehaviour
 {
     public PlayerHP playerHP;
     public UIPlayerHP plHP_UI;
+    public ResultController result;
     public float TitleReturnTime = 2.0f;
 
     bool BossClearFlag = false;
@@ -22,14 +23,17 @@ public class GameController : MonoBehaviour
         //残機表示の更新
         plHP_UI.UpdateLifeIcon(playerHP.GetHP());
 
-        if(playerHP.GetHP() <= 0
-            || BossClearFlag)
+        if(playerHP.GetHP() <= 0)
         {
-            //Updateを止める。
-            enabled = false;
-
-            //2秒後にタイトルへ。
-            Invoke("ReturnToTitle", TitleReturnTime);
+            //ゲームオーバー。
+            result.ResultGameOver();
+            EndGameScene();
+        }
+        else if (BossClearFlag)
+        {
+            //ゲームクリア―。
+            result.ResultGameClear();
+            EndGameScene();
         }
     }
     //タイトルへ戻る。
@@ -41,5 +45,14 @@ public class GameController : MonoBehaviour
     public void EnableClearFlag()
     {
         BossClearFlag = true;
+    }
+    //ゲームシーンを終わる。
+    void EndGameScene()
+    {
+        //Updateを止める。
+        enabled = false;
+
+        //2秒後にタイトルへ。
+        Invoke("ReturnToTitle", TitleReturnTime);
     }
 }

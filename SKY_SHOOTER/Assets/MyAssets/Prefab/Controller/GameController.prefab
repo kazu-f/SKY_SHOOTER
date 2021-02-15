@@ -45,4 +45,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerHP: {fileID: 0}
   plHP_UI: {fileID: 0}
-  TitleReturnTime: 2
+  result: {fileID: 0}
+  TitleReturnTime: 3
