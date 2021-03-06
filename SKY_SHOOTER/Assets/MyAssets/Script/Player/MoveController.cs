@@ -28,19 +28,23 @@ public class MoveController : MonoBehaviour
     {
         Vector3 vMove = new Vector3(0, 0, 0);
 
-        if (CrossPlatformInputManager.GetButton("LeftButton"))
+        if (CrossPlatformInputManager.GetButton("LeftButton")
+            || CrossPlatformInputManager.GetAxis("CrossButtonH") < -0.1f )
         {
             vMove.x = -MOVE_SPEED;
         }
-        if (CrossPlatformInputManager.GetButton("RightButton"))
+        if (CrossPlatformInputManager.GetButton("RightButton")
+            || CrossPlatformInputManager.GetAxis("CrossButtonH") > 0.1f)
         {
             vMove.x = MOVE_SPEED;
         }
-        if (CrossPlatformInputManager.GetButton("DownButton"))
+        if (CrossPlatformInputManager.GetButton("DownButton")
+            || CrossPlatformInputManager.GetAxis("CrossButtonV") < -0.1f)
         {
             vMove.y = -MOVE_SPEED;
         }
-        if (CrossPlatformInputManager.GetButton("UpButton"))
+        if (CrossPlatformInputManager.GetButton("UpButton")
+            || CrossPlatformInputManager.GetAxis("CrossButtonV") > 0.1f)
         {
             vMove.y = MOVE_SPEED;
         }
